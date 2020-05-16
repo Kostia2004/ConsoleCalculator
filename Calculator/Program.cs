@@ -15,6 +15,8 @@ namespace Calculator
             first = Console.ReadLine();
             Console.WriteLine("Enter second number: ");
             second = Console.ReadLine();
+            first_number = Convert.ToInt16(first);
+            second_number = Convert.ToInt16(second);
         }
     }
 }
