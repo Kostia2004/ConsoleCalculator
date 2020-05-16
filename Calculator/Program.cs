@@ -12,13 +12,20 @@ namespace Calculator
             int second_number;
 
             Console.WriteLine("Enter first number: ");
-            first = Console.ReadLine();
+           first = Console.ReadLine();
             Console.WriteLine("Enter operator: ");
             string operate = Console.ReadLine();
             Console.WriteLine("Enter second number: ");
             second = Console.ReadLine();
             first_number = Convert.ToInt16(first);
             second_number = Convert.ToInt16(second);
+            Console.WriteLine("=");
+            if (operate=="+")
+            {
+                Console.WriteLine(first_number+ second_number);
+            }
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
         }
     }
 }
