@@ -28,6 +28,10 @@ namespace Calculator
             {
                 Console.WriteLine(first_number - second_number);
             }
+            else if (operate == "*")
+            {
+                Console.WriteLine(first_number * second_number);
+            }
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
