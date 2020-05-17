@@ -37,6 +37,14 @@ namespace Calculator
                 case "//":
                     Console.WriteLine(first_number / second_number);
                     break;
+                case "^":
+                    int result = 1;
+                    for (int i=0; i< second_number; i++)
+                    {
+                        result *= first_number;
+                    }
+                    Console.WriteLine(result);
+                    break;
             }
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
