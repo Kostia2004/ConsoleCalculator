@@ -20,21 +20,23 @@ namespace Calculator
             first_number = Convert.ToInt16(first);
             second_number = Convert.ToInt16(second);
             Console.WriteLine("=");
-            if (operate=="+")
+            switch (operate)
             {
-                Console.WriteLine(first_number+ second_number);
-            }
-            else if (operate == "-")
-            {
-                Console.WriteLine(first_number - second_number);
-            }
-            else if (operate == "*")
-            {
-                Console.WriteLine(first_number * second_number);
-            }
-            else if (operate == "/")
-            {
-                Console.WriteLine(first_number / second_number);
+                case "+":
+                    Console.WriteLine(first_number + second_number);
+                    break;
+                case "-":
+                    Console.WriteLine(first_number - second_number);
+                    break;
+                case "*":
+                    Console.WriteLine(first_number * second_number);
+                    break;
+                case "/":
+                    Console.WriteLine((double)first_number / (double)second_number);
+                    break;
+                case "//":
+                    Console.WriteLine(first_number / second_number);
+                    break;
             }
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
