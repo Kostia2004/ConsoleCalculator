@@ -13,7 +13,7 @@ namespace Calculator
 
             Console.WriteLine("Enter first number: ");
             first = Console.ReadLine();
-            Console.WriteLine("Enter operator: ");
+            Console.WriteLine("Enter operator (+, -, *, /, //, %, ^): ");
             string operate = Console.ReadLine();
             Console.WriteLine("Enter second number: ");
             second = Console.ReadLine();
@@ -31,11 +31,15 @@ namespace Calculator
                 case "*":
                     Console.WriteLine(first_number * second_number);
                     break;
+                case ":":
                 case "/":
                     Console.WriteLine((double)first_number / (double)second_number);
                     break;
                 case "//":
                     Console.WriteLine(first_number / second_number);
+                    break;
+                case "%":
+                    Console.WriteLine(first_number % second_number);
                     break;
                 case "^":
                     int result = 1;
